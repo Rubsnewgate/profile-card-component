@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0 10px;
+  background-color: hsl(185, 75%, 39%);
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  width: 400px;
+  height: 420px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: white;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.card-bg {
+  background-image: url(../../assets/icons/bg-pattern-card.svg);
+  background-size: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  padding: 20px;
+}
+
+.card-profile__img {
+  position: absolute;
+  top: -50px;
+  border: 4px solid white;
+  border-radius: 100%;
+}
+
+.card-profile__user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.user-info__name {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.user-info__age {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.user-info__country {
+  margin: 0;
+  font-size: 1.8rem;
+  color: hsl(0, 0%, 59%);
+}
+
+.card-profile__user-statistics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  border-top: 2px solid hsl(0, 0%, 59%);
+  padding-top: 20px;
+}
+
+.user-statistics__followers, .user-statistics__likes, .user-statistics__posts {
+  text-align: center;
+}
+.user-statistics__followers h3, .user-statistics__likes h3, .user-statistics__posts h3 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+.user-statistics__followers span, .user-statistics__likes span, .user-statistics__posts span {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/*# sourceMappingURL=desktop.css.map */

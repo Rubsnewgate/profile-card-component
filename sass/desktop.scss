@@ -1,0 +1,68 @@
+@import 'guide.scss';
+
+// Main Container
+.main-wrapper {
+	display: grid;
+	grid-template-rows: 1fr 1.5fr;
+	width: 400px;
+	height: 420px;
+	font-family: $primary-font;
+	background-color: white;
+	border-radius: 20px;
+	z-index: 1;
+}
+
+// Card Background Top
+.card-bg {
+	background-image: url(../../assets/icons/bg-pattern-card.svg);
+	background-size: cover;
+	border-radius: 20px 20px 0 0;
+}
+
+// Card Information
+.card-profile {
+	@include flexbox(column, center, center, 20px);
+	position: relative;
+	padding: 20px;
+}
+.card-profile__img {
+	position: absolute;
+	top: -50px;
+	border: 4px solid white;
+	border-radius: 100%;
+}
+.card-profile__user-info {
+	@include flexbox(column, center, center, 10px);
+	margin-top: 20px;
+}
+.user-info__name {
+	margin: 0;
+	font-size: $md-font;
+}
+.user-info__age {
+	color: $dark-gray;
+	font-weight: 400;
+}
+.user-info__country {
+	margin: 0;
+	font-size: $sm-font;
+	color: $dark-gray;
+}
+.card-profile__user-statistics {
+	@include flexbox(row, space-around, center);
+	width: 100%;
+	height: auto;
+	border-top: 2px solid $dark-gray;
+	padding-top: 20px;
+}
+.user-statistics__followers, .user-statistics__likes, .user-statistics__posts {
+	text-align: center;
+	h3 {
+		margin: 0;
+		font-size: $md-font
+	}
+	span {
+		margin: 0;
+		font-size: $sm-font;
+	}
+}
