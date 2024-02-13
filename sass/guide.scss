@@ -25,6 +25,7 @@ html {
 	font-size: 62.5%;
 }
 body {
+	position: relative;
 	display: grid;
 	place-content: center;
 	width: 100%;
@@ -32,6 +33,7 @@ body {
 	margin: 0;
 	padding: 0 10px;
 	background-color: $dark-cyan;
+	overflow: hidden;
 }
 
 // Flexbox Factory
