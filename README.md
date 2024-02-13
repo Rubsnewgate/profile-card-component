@@ -1,5 +1,5 @@
 # frontend-mentor-challenge
-Challenge: Summary component of frontendMentor, completed.
+Challenge: Profile card component of frontendMentor, completed.
 
 ------------
 #### Technologies I used:
