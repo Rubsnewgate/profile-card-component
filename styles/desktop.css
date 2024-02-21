@@ -7,15 +7,12 @@ html {
 }
 
 body {
-  position: relative;
   display: grid;
   place-content: center;
   width: 100%;
   height: 100vh;
   margin: 0;
-  padding: 0 10px;
   background-color: hsl(185, 75%, 39%);
-  overflow: hidden;
 }
 
 .main-wrapper {
@@ -84,20 +81,23 @@ body {
   align-items: center;
   width: 100%;
   height: auto;
-  border-top: 2px solid hsl(0, 0%, 59%);
+  border-top: 1px solid hsl(0, 0%, 59%);
   padding-top: 20px;
 }
 
 .user-statistics__followers, .user-statistics__likes, .user-statistics__posts {
   text-align: center;
 }
-.user-statistics__followers h3, .user-statistics__likes h3, .user-statistics__posts h3 {
-  margin: 0;
+.user-statistics__followers .quantity, .user-statistics__likes .quantity, .user-statistics__posts .quantity {
+  display: block;
+  margin: 0 0 10px 0;
   font-size: 2.4rem;
+  font-weight: bold;
 }
-.user-statistics__followers span, .user-statistics__likes span, .user-statistics__posts span {
+.user-statistics__followers .text, .user-statistics__likes .text, .user-statistics__posts .text {
   margin: 0;
   font-size: 1.8rem;
+  color: hsl(0, 0%, 59%);
 }
 
 /*# sourceMappingURL=desktop.css.map */

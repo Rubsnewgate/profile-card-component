@@ -52,17 +52,20 @@
 	@include flexbox(row, space-around, center);
 	width: 100%;
 	height: auto;
-	border-top: 2px solid $dark-gray;
+	border-top: 1px solid $dark-gray;
 	padding-top: 20px;
 }
 .user-statistics__followers, .user-statistics__likes, .user-statistics__posts {
 	text-align: center;
-	h3 {
-		margin: 0;
-		font-size: $md-font
+	.quantity {
+		display: block;
+		margin: 0 0 10px 0;
+		font-size: $md-font;
+		font-weight: bold;
 	}
-	span {
+	.text {
 		margin: 0;
 		font-size: $sm-font;
+		color: $dark-gray;
 	}
 }
