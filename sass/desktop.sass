@@ -1,0 +1,67 @@
+@use 'guide.sass'
+
+// main container
+.main-wrapper
+	display: grid
+	grid-template-rows: 1fr 1.5fr
+	width: 400px
+	height: 420px
+	font-family: guide.$primary-font
+	background-color: white
+	border-radius: 20px
+	z-index: 1
+
+// card background top
+.card-bg
+	background-image: url(../assets/icons/bg-pattern-card.svg)
+	background-size: cover
+	border-radius: 20px 20px 0 0
+
+// card information
+.card-profile
+	@include guide.flexbox(column, center, center, 20px)
+	position: relative
+	padding: 20px
+
+.card-profile__img
+	position: absolute
+	top: -50px
+	border: 4px solid white
+	border-radius: 100%
+
+.card-profile__user-info
+	@include guide.flexbox(column, center, center, 10px)
+	margin-top: 20px
+
+.user-info__name
+	margin: 0
+	font-size: guide.$md-font
+
+.user-info__age
+	color: guide.$dark-gray
+	font-weight: 400
+
+.user-info__country
+	margin: 0
+	font-size: guide.$sm-font
+	color: guide.$dark-gray
+
+.card-profile__user-statistics
+	@include guide.flexbox(row, space-around, center)
+	width: 100%
+	height: auto
+	border-top: 1px solid guide.$dark-gray
+	padding-top: 20px
+
+.user-statistics__followers, .user-statistics__likes, .user-statistics__posts
+	text-align: center
+	.quantity
+		display: block
+		margin: 0 0 10px 0
+		font-size: guide.$md-font
+		font-weight: bold
+
+	.text
+		margin: 0
+		font-size: guide.$sm-font
+		color: guide.$dark-gray
