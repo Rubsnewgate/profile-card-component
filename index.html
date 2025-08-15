@@ -5,30 +5,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="description" content="Frontend Mentor challenge"/>
 	<title> Profile Card </title>
-	<!-- font -->
+	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"/>
 	<!-- styles -->
-	<link rel="stylesheet" href="../styles/desktop.css"/>
-	<link rel="stylesheet" href="../styles/mobile.css" media="(max-width: 390px)"/>
+	<link rel="stylesheet" href="./styles/main.css"/>
 </head>
 <body>
-	<main class="main-wrapper">
-		<section class="card-bg">
-		</section>
+	<div class="card">
+		<div class="card__bg"></div>
 
-		<section class="card-profile">
-			<img class="card-profile__img" src="../assets/img/image-victor.jpg"
-			alt="User profile image"
-			/>
+		<section class="card__profile">
+			<img class="card__profile-img" src="../assets/img/victor.jpg"
+				alt="User profile image"/>
 
-			<div class="card-profile__user-info">
-				<h3 class="user-info__name">
-					Victor Crest <span class="user-info__age"> 26 </span>
+			<div class="card__profile-user-info">
+				<h3 class="user-name">
+					Victor Crest <span class="user-age"> 26 </span>
 				</h3>
-				<span class="user-info__country"> London </span>
+
+				<span class="user-country"> London </span>
 			</div>
 
-			<div class="card-profile__user-statistics">
+			<div class="card__profile-user-statistics">
 				<div class="user-statistics__followers">
 					<span class="quantity"> 80k </span>
 					<span class="text"> Followers </span>
@@ -45,6 +43,6 @@
 				</div>
 			</div>
 		</section>
-	</main>
+	</div>
 </body>
 </html>

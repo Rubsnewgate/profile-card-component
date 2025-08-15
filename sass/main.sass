@@ -1,0 +1,75 @@
+@use 'guide.sass'
+
+// Card
+.card
+	display: grid
+	grid-template-rows: 1fr 1.5fr
+	width: min(25rem, 100%)
+	height: 23.75rem
+	font-family: guide.$primary-font
+	background-color: #fff
+	border-radius: 1.25rem
+	z-index: 1
+
+// Card background top
+.card__bg
+	background-image: url('../assets/icons/bg-pattern-card.svg')
+	background-size: cover
+	border-radius: 1.25rem 1.25rem 0 0
+
+// Card information
+.card__profile
+	@include guide.flexbox(column, center, center, 1.25rem)
+	position: relative
+	padding: 1.25rem
+
+.card__profile-img
+	position: absolute
+	width: 5rem
+	height: 5rem
+	top: -2.5rem
+	border: 0.25rem solid #fff
+	border-radius: 100%
+
+.card__profile-user-info
+	@include guide.flexbox(column, null, center, 0.5rem)
+	margin-block-start: 20px
+
+.user-name
+	font-size: guide.$md-font
+
+.user-age
+	color: guide.$dark-gray
+	font-weight: 400
+
+.user-country
+	font-size: guide.$sm-font
+	color: guide.$dark-gray
+
+.card__profile-user-statistics
+	@include guide.flexbox(row, space-around, center)
+	width: 100%
+	border-top: 1px solid guide.$dark-gray
+	padding-block-start: 1.25rem
+
+.user-statistics__followers, .user-statistics__likes, .user-statistics__posts
+	text-align: center
+
+	.quantity
+		display: block
+		margin-block-end: 0.5rem
+		font-size: guide.$md-font
+		font-weight: bold
+
+	.text
+		font-size: guide.$sm-font
+		color: guide.$dark-gray
+
+@media screen and (min-width: 25rem)
+	.card
+		height: 26.25rem
+
+	.card__profile-img
+		width: 6.5rem
+		height: 6.5rem
+		top: -50px
